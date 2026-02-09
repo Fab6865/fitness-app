@@ -1345,7 +1345,7 @@ const FitnessApp = () => {
                   </button>
                   <button
                     onClick={() => {
-                      if (confirm('Réinitialiser tous les liens personnalisés ?')) {
+                      if (window.confirm('Réinitialiser tous les liens personnalisés ?')) {
                         setCustomVideoLinks({});
                         saveCustomLinks({});
                       }
